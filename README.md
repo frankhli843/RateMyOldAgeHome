@@ -8,3 +8,26 @@
 - The mission:
   - build a web platform that allows users to rate old age homes as well as caretakers through www.ratemyoldagehome.com
 - The work done here will be maintained and owned by the non profit.
+
+# Contributers 
+- Special thanks is given to contributors who together work on this project with the goal of protecting our grandparents, neighbors, and friends.
+- Henrik Hey
+  - [Optional contact information]
+  - [Optional headshot]
+  - [Optional Description or bio]
+  - [Optional descrition of role]
+- Julie Winner 
+  - [Optional contact information]
+  - [Optional headshot]
+  - [Optional Description or bio]
+  - [Optional descrition of role]
+- Shawn Peng
+  - [Optional contact information]
+  - [Optional headshot]
+  - [Optional Description or bio]
+  - [Optional descrition of role]
+- Boyang
+  - [Optional contact information]
+  - [Optional headshot]
+  - [Optional Description or bio]
+  - [Optional descrition of role]
