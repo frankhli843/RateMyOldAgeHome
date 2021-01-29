@@ -9,9 +9,9 @@
   - build a web platform that allows users to rate old age homes as well as caretakers through www.ratemyoldagehome.com
 - The work done here will be maintained and owned by the non profit.
 
-<div style="text-align:center">
+<p align="center">
   <img src="images/elderly_group.png" alt="drawing" width="400"/>
-</div>
+</p>
 
 # Contributers 
 - Special thanks is given to contributors who together work on this project with the goal of protecting our grandparents, neighbors, and friends.
