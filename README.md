@@ -11,14 +11,15 @@
 
 <p align="center"><img src="images/elderly_group.png" alt="drawing" width="400"/></p>
 
+# Project Links
+- [Figma Designs](https://www.figma.com/file/7Wa4Wlfcp6ufqZO9n8Jng0/Rate-My-Retirement-Home?node-id=2%3A5814)
+
 # Things to investigate 
 - Ideas from call with Ben
 - Definition of success
 - Think about liability. What happens if the care taker is bad?
 - Think about focus. Personal support worker vs instuitions 
 
-# Project Links
-- [Figma Designs](https://www.figma.com/file/7Wa4Wlfcp6ufqZO9n8Jng0/Rate-My-Retirement-Home?node-id=2%3A5814)
 
 # Contributers 
 - Special thanks is given to contributors who together work on this project with the goal of protecting our grandparents, neighbors, and friends.
