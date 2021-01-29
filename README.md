@@ -14,20 +14,20 @@
 - Henrik Hey
   - [Optional contact information]
   - [Optional headshot]
-  - [Optional Description or bio]
+  - [Optional description or bio]
   - [Optional descrition of role]
 - Julie Winner 
   - [Optional contact information]
   - [Optional headshot]
-  - [Optional Description or bio]
+  - [Optional description or bio]
   - [Optional descrition of role]
 - Shawn Peng
   - [Optional contact information]
   - [Optional headshot]
-  - [Optional Description or bio]
+  - [Optional description or bio]
   - [Optional descrition of role]
 - Boyang
   - [Optional contact information]
   - [Optional headshot]
-  - [Optional Description or bio]
+  - [Optional description or bio]
   - [Optional descrition of role]
