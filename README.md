@@ -3,11 +3,15 @@
   - Our elderly are some of the most vunerable people within our society and with a large retiring demographic in Canada and US we need to find ways to make sure they are being treated properly. 
   - Care takers are also not recongized and properly compenstated for the good work they do. They are underpaid and underappreciated.
 - The vision: 
-  - help protect the elderly who are in senoir homes while recognizing 
-  - rewarding caretakers and recongizing who go out of the way to provide compassionate care. 
+  - Help protect the elderly who are in senoir homes while recognizing 
+  - Rewarding caretakers and recongizing who go out of the way to provide compassionate care. 
 - The mission:
-  - build a web platform that allows users to rate old age homes as well as caretakers through www.ratemyoldagehome.com
+  - Build a web platform that allows users to rate old age homes as well as caretakers through www.ratemyoldagehome.com
 - The work done here will be maintained and owned by the non profit.
+
+<p align="center">
+  <img src="images/elderly_group.png" alt="drawing" width="400"/>
+</p>
 
 # Contributers 
 - Special thanks is given to contributors who together work on this project with the goal of protecting our grandparents, neighbors, and friends.
