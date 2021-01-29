@@ -16,9 +16,9 @@
 
 # Things to investigate 
 - Ideas from call with Ben
-- Definition of success
-- Think about liability. What happens if the care taker is bad?
-- Think about focus. Personal support worker vs instuitions 
+  - [ ] Definition of success
+  - [ ] Think about liability. What happens if the care taker is bad?
+  - [ ] Think about focus. Personal support worker vs instuitions 
 
 
 # Contributers 
