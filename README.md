@@ -16,6 +16,11 @@
 
 # Contributers 
 - Special thanks is given to contributors who together work on this project with the goal of protecting our grandparents, neighbors, and friends.
+- Frank Li
+  - [Optional contact information]
+  - [Optional headshot]
+  - [Optional description or bio]
+  - [Optional descrition of role]
 - Henrik Hey
   - [Optional contact information]
   - [Optional headshot]
