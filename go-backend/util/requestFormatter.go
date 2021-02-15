@@ -1,28 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"io"
-	"net/http"
-	"strings"
-)
-
-func main() {
-	http.Handle("/", http.FileServer(http.Dir("react-build")))
-	http.HandleFunc("/henrik", henrik)
-	err := http.ListenAndServe(":4444", nil)
-	if err != nil { fmt.Println(err) }
-}
-
-func henrik(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/henrik" {
-		http.Error(w, "404 not found.", http.StatusNotFound)
-		return
-	}
-	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	_, err := io.WriteString(w, util.formatRequest(r),
-	); if err != nil { fmt.Println(err) }
-}
+import "fmt";
 
 // formatRequest generates ascii representation of a request
 func formatRequest(r *http.Request) string {
@@ -50,5 +28,4 @@ func formatRequest(r *http.Request) string {
 	// Return the request as a string
 	return strings.Join(request, "\n")
 }
-
 
