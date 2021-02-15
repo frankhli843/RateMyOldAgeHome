@@ -8,13 +8,13 @@ import (
 
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("react-build")))
-	http.HandleFunc("/login", login)
+	http.HandleFunc("/henrik", henrik)
 	err := http.ListenAndServe(":4444", nil)
 	if err != nil { fmt.Println(err) }
 
 }
 
-func login(w http.ResponseWriter, r *http.Request) {
+func henrik(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/henrik" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
