@@ -15,14 +15,14 @@ func main() {
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/login" {
+	if r.URL.Path != "/henrik" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	_, err := io.WriteString(w, `
 		<div>
-			sign in requested hi
+			this is a sanity check for the backend.
 		<div>`,
 	); if err != nil { fmt.Println(err) }
 }
