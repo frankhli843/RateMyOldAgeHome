@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
-	"io"
+	"io/ioutil"
+	"log"
 	"net/http"
 )
 
@@ -11,7 +13,6 @@ func main() {
 	http.HandleFunc("/henrik", henrik)
 	err := http.ListenAndServe(":4444", nil)
 	if err != nil { fmt.Println(err) }
-
 }
 
 func henrik(w http.ResponseWriter, r *http.Request) {
@@ -19,12 +20,16 @@ func henrik(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
-	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	_, err := io.WriteString(w, `
-		<div>
-			this is a sanity check for the backend.
-		<div>`,
-	); if err != nil { fmt.Println(err) }
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Printf("Error reading body: %v", err)
+		http.Error(w, "can't read body", http.StatusBadRequest)
+		return
+	}
+	// And now set a new body, which will simulate the same data we read:
+	r.Body = ioutil.NopCloser(bytes.NewBuffer(body))
+
+
 }
 
 
