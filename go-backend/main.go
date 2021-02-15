@@ -9,23 +9,23 @@ import (
 
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("react-build")))
-	http.HandleFunc("/henrik", henrik)
+	http.HandleFunc("/api", api)
 	err := http.ListenAndServe(":4444", nil)
 	if err != nil { fmt.Println(err) }
 }
 
-func henrik(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/henrik" {
+func api(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "/api" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	_, err := io.WriteString(w, util.formatRequest(r),
+	_, err := io.WriteString(w, PrettyFormatRequest(r),
 	); if err != nil { fmt.Println(err) }
 }
 
 // formatRequest generates ascii representation of a request
-func formatRequest(r *http.Request) string {
+func PrettyFormatRequest(r *http.Request) string {
 	// Create return string
 	var request []string
 	// Add the request string
@@ -43,7 +43,7 @@ func formatRequest(r *http.Request) string {
 
 	// If this is a POST, add post data
 	if r.Method == "POST" {
-		r.ParseForm()
+		err := r.ParseForm(); if err != nil { fmt.Println(err) }
 		request = append(request, "\n")
 		request = append(request, r.Form.Encode())
 	}
