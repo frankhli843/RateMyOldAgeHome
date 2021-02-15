@@ -1,6 +1,10 @@
-package main
+package util
 
-import "fmt";
+import (
+	"fmt"
+	"net/http"
+	"strings"
+)
 
 // formatRequest generates ascii representation of a request
 func formatRequest(r *http.Request) string {
