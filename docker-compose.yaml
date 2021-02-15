@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  persona-site-go:
+    container_name: frank-go
+    build:
+      context: ./backend-go # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: Dockerfile
+    ports:
+      - 6543:6543
+    tty: true
