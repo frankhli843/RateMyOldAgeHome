@@ -13,12 +13,10 @@ echo "============================  Full Stack =============================="
 echo "------------ copying over configuraiton"
 cp --remove-dest /root/RateMyOldAgeHome/nginx/ratemyoldagehome.com /etc/nginx/sites-available/ratemyoldagehome.com;
 cd /etc/nginx/sites-available/ || exit;
-pwd;
-ls;
-cat ratemyoldagehome.com;
+pwd; ls; cat ratemyoldagehome.com;
 
 echo "------------ create react directory"
-cd /root/RateMyOldAgeHome/react-app yarn && yarn build || exit;
+cd /root/RateMyOldAgeHome/react-app yarn && npm build || exit;
 
 echo "------------ symbolically linking files"
 ln -s /etc/nginx/sites-available/ratemyoldagehome.com /etc/nginx/sites-enabled/ratemyoldagehome.com;
