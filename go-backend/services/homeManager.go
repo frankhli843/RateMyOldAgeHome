@@ -2,7 +2,7 @@ package services
 
 import (
 	"net/http"
-	"app/util"
+	"github.com/frankhli843/RateMyOldAgeHome/tree/main/go-backend/util"
 )
 
 // Home Routes
