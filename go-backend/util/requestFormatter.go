@@ -7,7 +7,7 @@ import (
 )
 
 // formatRequest generates ascii representation of a request
-func formatRequest(r *http.Request) string {
+func FormatRequest(r *http.Request) string {
 	// Create return string
 	var request []string
 	// Add the request string
