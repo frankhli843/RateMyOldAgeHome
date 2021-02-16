@@ -2,9 +2,21 @@ package util
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 	"strings"
 )
+
+func IsRequestValid(w http.ResponseWriter, r *http.Request, url string) bool {
+	if r.URL.Path != url {
+		http.Error(w, "404 not found.", http.StatusNotFound)
+		return false
+	}
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	_, err := io.WriteString(w, FormatRequest(r),
+	); if err != nil { fmt.Println(err) }
+	return true
+}
 
 // formatRequest generates ascii representation of a request
 func FormatRequest(r *http.Request) string {
