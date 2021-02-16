@@ -5,7 +5,6 @@ import (
 	"io"
 	"net/http"
 	"strings"
-	"go-ratemyoldagehome/util"
 )
 
 func main() {
