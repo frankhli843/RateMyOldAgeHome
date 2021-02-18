@@ -11,6 +11,13 @@
 
 <p align="center"><img src="images/elderly_group.png" alt="drawing" width="400"/></p>
 
+
+# Development set up
+- Here is a helpful alias to launch a local version of the site
+```
+alias retire='cd react-app; npm run build; cp -r ./build ../go-backend/react-build; cd ..; docker-compose up --build;
+```
+
 # Project Links
 - [Figma Designs](https://www.figma.com/file/7Wa4Wlfcp6ufqZO9n8Jng0/Rate-My-Retirement-Home?node-id=2%3A5814)
 
