@@ -13,7 +13,7 @@ func main() {
 	
 	collection := util.ConnectDB()
 
-	services.Collection = collection; 
+	services.Collection = collection
 
 	http.Handle("/", http.FileServer(http.Dir("react-build")))
 
