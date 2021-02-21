@@ -17,6 +17,10 @@
 ```
 alias retire='cd react-app; npm run build; cp -r ./build ../go-backend/react-build; cd ..; docker-compose up --build;
 ```
+- sending from local build to server 
+```
+scp -r build/ root@68.183.204.192:/root/RateMyOldAgeHome/go-backend/react-build/
+```
 
 # Project Links
 - [Figma Designs](https://www.figma.com/file/7Wa4Wlfcp6ufqZO9n8Jng0/Rate-My-Retirement-Home?node-id=2%3A5814)
