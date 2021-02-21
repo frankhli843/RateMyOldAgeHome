@@ -4,7 +4,7 @@ server {
 
     server_name ratemyoldagehome.com www.ratemyoldagehome.com;
     location / {
-        proxy_pass http://127.0.0.1:6543/;
+        proxy_pass http://127.0.0.1:4444/;
     }
 }
 
