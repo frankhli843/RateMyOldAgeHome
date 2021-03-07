@@ -10,7 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const DB_URI string = "mongodb+srv://henrik:wvay16pwZsZ0RCvS@cluster0.w708v.mongodb.net/ratemyoldagehome?retryWrites=true&w=majority" 
+const DB_URI string = "http://mongo:27771"
 
 // ConnectDB : This is helper function to connect mongoDB
 // If you want to export your function. You must to start upper case function name. Otherwise you won't see your function when you import that on other class.
