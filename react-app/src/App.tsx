@@ -5,6 +5,7 @@ import {
 	Route,
 	Link
 } from "react-router-dom";
+import LoginScreen from './Screens/Login/LoginScreen';
 import './Styles/base.scss';
 
 function App() {
@@ -23,6 +24,9 @@ function NavigationLinks(){
 		<nav>
 			<ul>
 				<li>
+					<Link to="/login">Login</Link>
+				</li>
+				<li>
 					<Link to="/">Home</Link>
 				</li>
 				<li>
@@ -39,6 +43,9 @@ function NavigationLinks(){
 function NavigationSwitch(){
 	return (
 		<Switch>
+			<Route path="/login">
+				<LoginScreen />
+			</Route>
 			<Route path="/about">
 				<About />
 			</Route>
