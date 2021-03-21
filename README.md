@@ -19,7 +19,7 @@ alias retire='cd react-app; npm run build; cp -r ./build ../go-backend/react-bui
 ```
 - sending from local build to server 
 ```
-scp -r build/ root@68.183.204.192:/root/RateMyOldAgeHome/go-backend/react-build/
+scp -r build/* root@68.183.204.192:/root/RateMyOldAgeHome/go-backend/react-build/
 ```
 
 # Project Links
